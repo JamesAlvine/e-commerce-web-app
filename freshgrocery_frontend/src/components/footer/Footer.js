@@ -1,16 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-// new and found
-
 import React from 'react';
 import { Link } from "react-router-dom";
 
@@ -29,6 +17,10 @@ const Footer = () => {
                 <li><Link className="footer-link-item" to="/https://www.twitter.com"><i className="bi bi-twitter"></i></Link></li>
                 <li><Link className="footer-link-item" to="/https://www.facebook.com"><i className="bi bi-facebook"></i></Link></li>
                 <li><Link className="footer-link-item" to="/https://www.linkedin.comr"><i className="bi bi-linkedin"></i></Link></li>
+
+
+                <li><Link className='footer-link-item' to="/terms_conditions">terms and Condition</Link></li>
+                <li><Link className='footer-link-item' to="/Privacy_Policy">Privacy Policy</Link></li>
               </ul>
             </div>
           </div>

@@ -1,56 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+/*------------------------
+Navigating styling
+------------------------ */
+header {
+  margin: 20px 0;
+}
 
 .navbar {
-  /* background-color: whitesmoke !important; */
-  background-color: #45335d !important;
-  z-index: 100;
-  position: sticky;
-  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.navbar_logo a {
-  font-family: sans-serif;
+.logo h1 {
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 23px;
-  color: #fbfbfb !important;
-  /* color: #8e676d !important; */
-
-  /* font-style: italic; */
+  font-weight: bold;
+  font-size: 40px;
 }
 
-.navbar_logo i {
-  font-size: 26px;
-  margin-left: 2px;
-  color: #e1b7bf !important;
+.logo h1 a {
+  text-decoration: none;
+  color: #2b7216;
 }
 
-.navbar_logo div {
-  /* color: #45335d; */
-  width: 100px;
-  height: 4px;
-  background: #e1b7bf;
-  border-radius: 10px;
-  margin-left: 10px;
+.logo h1 a:hover {
+  color: #00634e;
 }
 
-.nav-link {
-  color: #fbfbfb !important;
-  font-size: 16px;
-  text-transform: uppercase;
+.toggle-btn {
+  display: none;
 }
 
-/*medai queries*/
-@media (max-width: 992px) {
-  .buttons .btn{
-    width: 100%;
+.logout-btn {
+  padding: 0.5em 1.0em;
+  background: #753900;
+  color: #fff;
+  border-radius: 0.5rem !important;
+  border: none;
+}
+
+.logout-btn:hover {
+  background: #9e5613;
+}
+
+@media all and (max-width: 992px) {
+  .logo h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
   }
-
-  .buttons .btn:nth-child(1) {
-    margin-bottom: 50px !important;
-  }  
+  .logo span {
+    display: none;
+  }
+  .switch_btn {
+    color: #00634e;
+  }
+  .toggle-btn {
+    display: block;
+  }
 }
-
-
-
+/*# sourceMappingURL=Navbar.css.map */

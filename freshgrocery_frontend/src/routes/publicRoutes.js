@@ -7,11 +7,15 @@ import ProductDetails from '../layouts/frontend/ProductDetails';
 import Checkout from '../layouts/frontend/Checkout';
 import Page404 from "../components/errors/Page404";
 import Page403 from "../components/errors/Page403";
+import TnC from '../layouts/frontend/TnC';
+import Privacy_Policy from '../layouts/frontend/Privacy_Policy';
 
 
 
 const publicRoutes = [
     {path: '/', exact: true, name: 'Home', component: Home},
+    {path: '/terms_conditions', exact:true, name:'TnC', component:TnC},
+    {path:'/Privacy_Policy',exact: true,name:'Privacy_Policy',component:Privacy_Policy},
     {path: '/403', exact: true, name: '403', component: Page403},
     {path: '/404', exact: true, name: '404', component: Page404},
     {path: '/about', exact: true, name: 'About', component: AboutUs},

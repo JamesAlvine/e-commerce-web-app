@@ -31,4 +31,4 @@ function Vmc() {
   )
 }
 
-export default Vmc
+export default Vm c
